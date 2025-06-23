@@ -9,20 +9,20 @@
 <body class="bg-[#334E5C] text-black min-h-screen flex flex-col justify-between">
 
   <!-- Dynamic Background Section -->
-  <div id="background" class="absolute inset-0 -z-10 bg-cover bg-center opacity-70" style="background-image: url('https://source.unsplash.com/1920x1080/?newyork,hiphop');"></div>
+<div id="background" class="absolute inset-0 -z-10 bg-cover bg-center opacity-80" style="background-image: url('https://source.unsplash.com/1920x1080/?newyork,hiphop');"></div>
 
   <!-- Main Layout Grid -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
 
     <!-- Spotify Now Playing -->
-    <div class="col-span-1 bg-[#7A8B99] rounded-xl p-6 shadow-lg text-center">
-      <h2 class="text-xl font-bold mb-4">Now Playing</h2>
-      <div id="spotify-widget">
-        <img src="https://via.placeholder.com/150" alt="Album Art" class="mx-auto mb-4 rounded">
-        <p class="text-xl font-semibold">"C.R.E.A.M."</p>
-        <p class="text-sm text-[#E8EFF8]">Wu-Tang Clan</p>
-      </div>
-    </div>
+<div class="col-span-1 bg-[#7A8B99] rounded-xl p-6 shadow-xl text-center">
+  <h2 class="text-xl font-bold mb-4">Now Playing</h2>
+  <div id="spotify-widget">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Wu-TangClanC.R.E.A.M..jpg" alt="Album Art" class="mx-auto mb-4 rounded">
+    <p class="text-xl font-semibold">"C.R.E.A.M."</p>
+    <p class="text-sm text-[#E8EFF8]">Wu-Tang Clan</p>
+  </div>
+</div>
 
     <!-- Weather Widget -->
     <div class="col-span-1 bg-[#7A8B99] rounded-xl p-6 shadow-lg text-center">
@@ -43,11 +43,11 @@
   </div>
 
   <!-- News Ticker -->
-  <div class="bg-[#7A8B99] p-4 text-center text-sm">
-    <marquee behavior="scroll" direction="left" id="news-ticker" class="text-[#9B4C64]">
-      NASA discovers new Earth-like planet. | Local artist opens free community studio. | School lunches go organic city-wide.
-    </marquee>
-  </div>
+<div class="bg-[#7A8B99] p-6 text-center text-sm overflow-hidden whitespace-nowrap">
+  <marquee behavior="scroll" direction="left" id="news-ticker" class="text-[#9B4C64]">
+    NASA discovers new Earth-like planet. | Local artist opens free community studio. | School lunches go organic city-wide.
+  </marquee>
+</div>
 
   <script src="script.js"></script>
 </body>
