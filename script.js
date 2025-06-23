@@ -1,5 +1,5 @@
-// OpenWeather API Key
-const apiKey = '242e274db84f68040ac3b0017f9953ce';
+// Import the API key from config.js
+import apiKey from './config.js';
 
 // Target city
 const city = 'New York';
